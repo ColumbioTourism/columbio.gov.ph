@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Columbio | Official Tourism Portal of Columbio, Sultan Kudarat</title>
+  <meta name="description" content="Discover Columbio, Sultan Kudarat — Home of La Palmera Mountain Ridge, Pangadilan Falls, Fetam Klego Underground River, and rich Blaan heritage. Truly #ColumViewTiful!" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            forest: {
+              950: '#051F13',
+              900: '#0A3622',
+              800: '#0F4D31',
+              700: '#157347',
+              600: '#198754',
+              500: '#22A86B',
+              100: '#E6F4ED',
+              50: '#F2F9F5',
+            },
+            sungold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+            },
+            cream: '#F8FAF9',
+          },
+          boxShadow: {
+            'soft': '0 10px 40px -10px rgba(10, 54, 34, 0.10)',
+            'card': '0 15px 35px -12px rgba(10, 54, 34, 0.14)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom DOT-inspired woven motif & subtle animations */
+    .woven-accent {
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(251, 191, 36, 0.15) 0px,
+        rgba(251, 191, 36, 0.15) 4px,
+        transparent 4px,
+        transparent 10px
+      );
+    }
+
+    .dot-ribbon {
+      background: linear-gradient(90deg, #0A3622 0%, #157347 35%, #198754 65%, #F59E0B 88%, #FBBF24 100%);
+    }
+
+    @keyframes slowZoom {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+
+    .hero-bg-animate {
+      animation: slowZoom 24s ease-in-out infinite;
+    }
+
+    /* Hide scrollbar for horizontal pill lists on mobile */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-cream text-slate-800 antialiased selection:bg-forest-700 selection:text-white">
+
+  <!-- Top Official DOT / Region XII SOCCSKSARGEN Ribbon -->
+  <div class="dot-ribbon text-white text-xs py-1.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-medium tracking-wide">
+        <span class="inline-block w-2 h-2 rounded-full bg-sungold-400 animate-pulse"></span>
+        <span>OFFICIAL TOURISM PORTAL • MUNICIPALITY OF COLUMBIO, SULTAN KUDARAT • REGION XII (SOCCSKSARGEN)</span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 text-white/95 font-medium">
+        <a href="#advisories" class="hover:text-sungold-400 transition">La Palmera Daily Cap Advisory</a>
+        <span>|</span>
+        <span class="text-sungold-400 font-semibold">#LoveColumbio #ColumViewTiful</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header id="navbar" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-forest-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- DOT-Inspired Woven Emblem + Logo -->
+        <a href="#" class="flex items-center gap-3 group focus:outline-none">
+          <div class="relative w-12 h-12 rounded-2xl bg-forest-900 flex items-center justify-center shadow-md overflow-hidden group-hover:scale-105 transition-transform">
+            <!-- Custom SVG Woven Heart / Mountain Ridge Emblem -->
+            <svg viewBox="0 0 64 64" class="w-10 h-10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="46" cy="18" r="7" fill="#FBBF24" />
+              <path d="M6 48C15 32 23 26 32 34C41 42 48 25 58 22V54H6V48Z" fill="#198754" />
+              <path d="M6 52C18 39 27 37 37 44C45 49 51 39 58 37V56H6V52Z" fill="#22A86B" />
+              <!-- Blaan Geometric Diamond Motif -->
+              <path d="M32 12L37 17L32 22L27 17L32 12Z" stroke="#FBBF24" stroke-width="2" />
+              <path d="M18 19L21 22L18 25L15 22L18 19Z" fill="#F59E0B" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-forest-900">LOVE</span>
+              <span class="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-forest-600">COLUMBIO</span>
+            </div>
+            <p class="text-[11px] font-semibold uppercase tracking-widest text-slate-500 -mt-1">Sultan Kudarat • Philippines</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#destinations" class="hover:text-forest-700 transition py-2">Destinations</a>
+          <a href="#experiences" class="hover:text-forest-700 transition py-2">Experiences</a>
+          <a href="#heritage" class="hover:text-forest-700 transition py-2">Blaan Heritage</a>
+          <a href="#plan-trip" class="hover:text-forest-700 transition py-2">Plan Your Trip</a>
+          <a href="#advisories" class="hover:text-forest-700 transition py-2">Travel Advisories</a>
+        </nav>
+
+        <!-- Action CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <button onclick="openBookingModal()" class="hidden sm:inline-flex items-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-display font-bold text-sm px-5 py-2.5 rounded-full shadow-sm hover:shadow transition cursor-pointer">
+            <svg class="w-4 h-4 text-sungold-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Register Visit</span>
+          </button>
+
+          <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl text-forest-900 hover:bg-forest-50 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-forest-100 px-4 pt-3 pb-6 space-y-2 shadow-lg">
+      <a href="#destinations" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-forest-50 hover:text-forest-700">Destinations</a>
+      <a href="#experiences" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-forest-50 hover:text-forest-700">Experiences</a>
+      <a href="#heritage" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-forest-50 hover:text-forest-700">Blaan Heritage</a>
+      <a href="#plan-trip" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-forest-50 hover:text-forest-700">Plan Your Trip & Budget</a>
+      <a href="#advisories" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-forest-50 hover:text-forest-700">Travel Advisories</a>
+      <div class="pt-2">
+        <button onclick="openBookingModal()" class="w-full bg-forest-700 text-white font-display font-bold py-3 rounded-xl shadow">
+          Pre-Register Eco-Visit
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Bleed Hero Banner with Interactive Explorer -->
+  <section class="relative min-h-[88vh] flex flex-col justify-between overflow-hidden bg-forest-950 text-white">
+    <!-- Dynamic Hero Background Image (Switches between Lush Green Season & Golden Season) -->
+    <div class="absolute inset-0 z-0">
+      <img
+        id="hero-image"
+        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2000&q=80"
+        onerror="this.src='https://placehold.co/1920x1080/0A3622/FBBF24?text=The+Grand+La+Palmera+Mountain+Ridge'"
+        alt="Rolling emerald ridges of Columbio, Sultan Kudarat"
+        class="w-full h-full object-cover object-center hero-bg-animate transition-opacity duration-700"
+      />
+      <!-- Deep Emerald & Forest Vignette Overlay -->
+      <div id="hero-overlay" class="absolute inset-0 bg-gradient-to-r from-forest-950/90 via-forest-900/65 to-forest-950/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-transparent to-forest-950/30"></div>
+    </div>
+
+    <!-- Hero Centerpiece Copy -->
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-16 pb-12 my-auto">
+      <div class="max-w-3xl">
+        <!-- DOT Style Campaign Pill -->
+        <div class="inline-flex items-center gap-2.5 bg-white/15 backdrop-blur-md border border-white/25 px-4 py-1.5 rounded-full mb-6">
+          <span class="px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wider bg-sungold-500 text-forest-950 rounded-full">Region XII</span>
+          <span class="text-xs sm:text-sm font-medium text-white/95">The Ecoutourism Site of Sultan Kudarat</span>
+        </div>
+
+        <h1 class="font-display font-extrabold text-4xl sm:text-6xl lg:text-7xl leading-[1.08] tracking-tight mb-5">
+          LOVE <span class="text-sungold-400">COLUMBIO</span>
+          <span class="block text-2xl sm:text-4xl lg:text-5xl font-bold text-white/95 mt-2">
+            Truly <span class="underline decoration-sungold-400 decoration-4 underline-offset-8">#ColumViewTiful</span>
+          </span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-white/90 leading-relaxed max-w-2xl mb-8 font-normal">
+          From the 500-hectare rolling emerald ridges of <strong class="text-sungold-400 font-semibold">La Palmera</strong> to hidden subterranean rivers, limestone waterfalls, and vibrant <strong class="text-white font-semibold">Blaan indigenous culture</strong>—discover Mindanao's rising eco-tourism sanctuary.
+        </p>
+
+        <!-- Primary Hero Actions + Season View Switcher -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#destinations" class="inline-flex items-center gap-2.5 bg-sungold-500 hover:bg-sungold-400 text-forest-950 font-display font-extrabold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5">
+            <span>Explore Destinations</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+
+          <!-- Interactive Season Toggle (Green Season vs Golden Season) -->
+          <div class="inline-flex items-center bg-forest-950/75 backdrop-blur-md border border-white/20 p-1.5 rounded-full">
+            <button
+              id="btn-season-green"
+              onclick="setSeasonMode('green')"
+              class="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-600 text-white shadow transition cursor-pointer"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-300"></span>
+              <span>Emerald Season</span>
+            </button>
+            <button
+              id="btn-season-gold"
+              onclick="setSeasonMode('gold')"
+              class="flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-white/80 hover:text-white transition cursor-pointer"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-sungold-400"></span>
+              <span>Golden Season</span>
+            </button>
+          </div>
+        </div>
+        <p id="season-caption" class="text-xs text-emerald-200 mt-3 font-medium">
+          🌿 Currently viewing: <strong>Lush Emerald Season (June – January)</strong> — Vibrant green cogonal hills & cool sea of clouds.
+        </p>
+      </div>
+    </div>
+
+    <!-- Overlaid DOT Quick Destination Filter Bar -->
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pb-8">
+      <div class="bg-white/95 backdrop-blur-md text-slate-800 rounded-3xl p-4 sm:p-5 shadow-2xl border border-white/40">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl bg-forest-100 text-forest-700 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-forest-700">Quick Destination Finder</p>
+              <p class="text-sm text-slate-600">Filter Columbio's accredited eco-sites by adventure type</p>
+            </div>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div id="hero-filter-pills" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
+            <button data-filter="all" class="filter-pill active px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-700 text-white shadow-sm whitespace-nowrap transition cursor-pointer">
+              All Wonders (6)
+            </button>
+            <button data-filter="mountains" class="filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 whitespace-nowrap transition cursor-pointer">
+              Mountains & Ridges
+            </button>
+            <button data-filter="waterfalls" class="filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 whitespace-nowrap transition cursor-pointer">
+              Waterfalls & Springs
+            </button>
+            <button data-filter="caves" class="filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 whitespace-nowrap transition cursor-pointer">
+              Caves & Rivers
+            </button>
+            <button data-filter="culture" class="filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 whitespace-nowrap transition cursor-pointer">
+              Faith & Eco-Parks
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Highlights Strip (DOT Campaign Metrics) -->
+  <section class="bg-forest-900 text-white py-8 border-b border-forest-800 woven-accent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-forest-800 border border-forest-700 flex items-center justify-center text-sungold-400 font-display font-extrabold text-xl">500+</div>
+          <div>
+            <p class="font-display font-bold text-white text-base">Hectares of Ridges</p>
+            <p class="text-xs text-emerald-200">La Palmera Rolling Hills</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-forest-800 border border-forest-700 flex items-center justify-center text-sungold-400 font-display font-extrabold text-xl">15+</div>
+          <div>
+            <p class="font-display font-bold text-white text-base">Eco-Tourism Sites</p>
+            <p class="text-xs text-emerald-200">Falls, Caves & Springs</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-forest-800 border border-forest-700 flex items-center justify-center text-sungold-400 font-display font-extrabold text-xl">300</div>
+          <div>
+            <p class="font-display font-bold text-white text-base">Daily Eco-Cap</p>
+            <p class="text-xs text-emerald-200">Sustainable Ridge Protection</p>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl bg-forest-800 border border-forest-700 flex items-center justify-center text-sungold-400 font-display font-extrabold text-xl">100%</div>
+          <div>
+            <p class="font-display font-bold text-white text-base">Community-Led</p>
+            <p class="text-xs text-emerald-200">Blaan & Local Accredited Guides</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Destinations Showcase -->
+  <section id="destinations" class="py-20 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="inline-block text-xs font-extrabold uppercase tracking-widest text-forest-700 bg-forest-100 px-3.5 py-1.5 rounded-full mb-3">
+            Must-Visit Wonders
+          </span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-forest-950 tracking-tight">
+            Explore Columbio's <span class="text-forest-700">Natural Treasures</span>
+          </h2>
+        </div>
+        <p class="text-slate-600 max-w-md text-sm sm:text-base leading-relaxed">
+          Click any destination card to inspect trail difficulty, distance from Poblacion, accredited guide requirements, and travel tips.
+        </p>
+      </div>
+
+      <!-- Secondary Filter & Search Bar -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-8">
+        <div id="section-filter-pills" class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+          <button data-filter="all" class="sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-800 text-white transition cursor-pointer">All</button>
+          <button data-filter="mountains" class="sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-forest-600 transition cursor-pointer">Mountains & Ridges</button>
+          <button data-filter="waterfalls" class="sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-forest-600 transition cursor-pointer">Waterfalls & Springs</button>
+          <button data-filter="caves" class="sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-forest-600 transition cursor-pointer">Caves & Rivers</button>
+          <button data-filter="culture" class="sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-forest-600 transition cursor-pointer">Faith & Eco-Parks</button>
+        </div>
+
+        <div class="relative min-w-[240px]">
+          <input
+            id="destination-search"
+            type="text"
+            placeholder="Search La Palmera, falls, cave..."
+            class="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border border-slate-200 text-sm focus:outline-none focus:border-forest-600 focus:ring-2 focus:ring-forest-600/20"
+          />
+          <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Destinations Grid (Rendered dynamically via JS for filtering & modal triggers) -->
+      <div id="destinations-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Cards injected by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DOT-Style Signature Experiences Section -->
+  <section id="experiences" class="py-20 bg-forest-950 text-white relative overflow-hidden">
+    <!-- Decorative Background Pattern -->
+    <div class="absolute inset-0 opacity-10 woven-accent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-block text-xs font-extrabold uppercase tracking-widest text-sungold-400 bg-white/10 px-4 py-1.5 rounded-full mb-3">
+          Reasons to Love Columbio
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight mb-4">
+          Unforgettable <span class="text-sungold-400">Eco-Adventures</span>
+        </h2>
+        <p class="text-emerald-100/85 text-sm sm:text-base">
+          Every journey in Columbio supports local community livelihoods, accredited skylab drivers, and indigenous conservation stewards.
+        </p>
+      </div>
+
+      <!-- Interactive Experience Tabs -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- Left Tab Buttons -->
+        <div class="lg:col-span-5 space-y-3" id="experience-tabs">
+          <button onclick="selectExperience(0)" class="exp-tab active w-full text-left p-5 rounded-2xl bg-forest-800 border-2 border-sungold-400 transition cursor-pointer">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-bold text-lg text-white">1. Skybound & Ridge Camping</span>
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-sungold-500 text-forest-950">Signature</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-100/80">Wake up above a sea of clouds at 700+ MASL overlooking the boundless rolling ridges of Barangay Sucob.</p>
+          </button>
+
+          <button onclick="selectExperience(1)" class="exp-tab w-full text-left p-5 rounded-2xl bg-forest-900/80 border border-forest-800 hover:border-forest-600 transition cursor-pointer">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-bold text-lg text-white">2. Skylab & 4x4 Highland Rides</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-white/10 text-emerald-200">Thrill</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-100/80">Hop aboard Columbio's iconic modified motorcycles ("Skylab") or 4x4 trucks piloted by DOT-oriented local riders.</p>
+          </button>
+
+          <button onclick="selectExperience(2)" class="exp-tab w-full text-left p-5 rounded-2xl bg-forest-900/80 border border-forest-800 hover:border-forest-600 transition cursor-pointer">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-bold text-lg text-white">3. Subterranean & Waterfall Treks</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-white/10 text-emerald-200">Eco-Trail</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-100/80">Navigate crystal underground rivers at Fetam Klego and multi-tiered jungle cascades at Seven Terraces.</p>
+          </button>
+
+          <button onclick="selectExperience(3)" class="exp-tab w-full text-left p-5 rounded-2xl bg-forest-900/80 border border-forest-800 hover:border-forest-600 transition cursor-pointer">
+            <div class="flex items-center justify-between mb-1">
+              <span class="font-display font-bold text-lg text-white">4. Hot & Cold Spring Rejuvenation</span>
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-white/10 text-emerald-200">Wellness</span>
+            </div>
+            <p class="text-xs sm:text-sm text-emerald-100/80">Unwind after ridge trekking in the therapeutic waters of Columbio Hot & Cold Spring and Sinapulan Cold Spring.</p>
+          </button>
+        </div>
+
+        <!-- Right Experience Feature Display -->
+        <div class="lg:col-span-7">
+          <div class="bg-forest-900 border border-forest-700/70 rounded-3xl overflow-hidden shadow-2xl">
+            <div class="relative h-72 sm:h-96 overflow-hidden">
+              <img
+                id="exp-image"
+                src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1400&q=80"
+                onerror="this.src='https://placehold.co/1200x800/0F4D31/FBBF24?text=Ridge+Camping+in+Columbio'"
+                alt="Skybound Ridge Camping"
+                class="w-full h-full object-cover transition-all duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950 via-transparent to-transparent"></div>
+              <span id="exp-badge" class="absolute top-4 left-4 bg-sungold-500 text-forest-950 font-display font-extrabold text-xs uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow">
+                Overnight Stargazing & Sunrise
+              </span>
+            </div>
+            <div class="p-6 sm:p-8">
+              <h3 id="exp-title" class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-3">
+                Skybound & Ridge Camping at La Palmera
+              </h3>
+              <p id="exp-desc" class="text-emerald-100/90 text-sm sm:text-base leading-relaxed mb-6">
+                Pitch a tent along designated eco-camping zones on the sweeping cogonal hills of Barangay Sucob. Enjoy cool mountain breezes, zero light pollution for Milky Way stargazing, and a golden sunrise breaking over a sea of clouds.
+              </p>
+              <div class="grid grid-cols-3 gap-4 pt-4 border-t border-forest-800 text-xs sm:text-sm">
+                <div>
+                  <span class="block text-emerald-300/80 text-xs">Best Time</span>
+                  <strong id="exp-time" class="text-white font-semibold">4:30 AM – 7:30 AM</strong>
+                </div>
+                <div>
+                  <span class="block text-emerald-300/80 text-xs">Local Guide</span>
+                  <strong id="exp-guide" class="text-white font-semibold">Accredited Required</strong>
+                </div>
+                <div>
+                  <span class="block text-emerald-300/80 text-xs">Community Impact</span>
+                  <strong id="exp-impact" class="text-sungold-400 font-semibold">Direct Brgy. Sucob Coop</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blaan Indigenous Heritage & Cultural Stewardship Section -->
+  <section id="heritage" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-forest-50 border border-forest-100 rounded-3xl p-6 sm:p-10 lg:p-14 shadow-soft">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-5">
+            <div class="inline-flex items-center gap-2 bg-forest-900 text-sungold-400 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider">
+              <span>Cultural Soul of Columbio</span>
+            </div>
+            <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-forest-950 leading-tight">
+              Honoring <span class="text-forest-700">Blaan Indigenous Heritage</span> & Living Traditions
+            </h2>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              Long before visitors marveled at Columbio's rolling emerald ridges, the indigenous <strong>Blaan people</strong> nurtured these highlands with deep reverence for nature. Today, Columbio's community-based eco-tourism empowers Blaan elders, artisans, forest guards, and local youth as primary stewards of their ancestral landscape.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-white p-4 rounded-2xl border border-forest-100 shadow-sm">
+                <h4 class="font-display font-bold text-forest-900 text-base mb-1">Tabih Weaving & Beadwork</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Intricate abaca ikat textiles and traditional brass-and-bead accessories crafted by local Blaan weavers.</p>
+              </div>
+              <div class="bg-white p-4 rounded-2xl border border-forest-100 shadow-sm">
+                <h4 class="font-display font-bold text-forest-900 text-base mb-1">Kasfala & Cultural Festivals</h4>
+                <p class="text-xs text-slate-600 leading-relaxed">Celebrations of peace, thanksgiving harvests, agung gong ensembles, and traditional Blaan dances.</p>
+              </div>
+            </div>
+
+            <div class="pt-3 flex flex-wrap items-center gap-4">
+              <button onclick="openBookingModal('Cultural & Heritage Immersion')" class="bg-forest-800 hover:bg-forest-900 text-white font-display font-bold text-sm px-6 py-3 rounded-full shadow transition cursor-pointer">
+                Request Cultural Immersion
+              </button>
+              <span class="text-xs font-semibold text-forest-800">Always ask permission before photographing elders & sacred sites.</span>
+            </div>
+          </div>
+
+          <!-- Custom Cultural Motif & Photographic Collage -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+              <img
+                src="Kastifun Festival.jpg?auto=format&fit=crop&w=1200&q=80"
+                onerror="this.src='https://placehold.co/1000x750/0A3622/FBBF24?text=B%27laan+Heritage+%26+Highland+Stewardship'"
+                alt="Highland landscape and cultural stewardship in Columbio"
+                class="w-full h-80 sm:h-96 object-cover"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/90 via-forest-950/20 to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl">
+                <div class="flex items-start gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-sungold-500 text-forest-950 flex items-center justify-center font-display font-extrabold shrink-0">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="font-display font-bold text-forest-950 text-sm">Responsible Cultural Tourism Pledge</p>
+                    <p class="text-xs text-slate-600 mt-0.5">
+                      100% of environmental and guide fees go directly to Barangay eco-tourism associations and indigenous community development funds.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive "Plan Your Trip" & Itinerary / Budget Builder -->
+  <section id="plan-trip" class="py-20 bg-cream border-t border-forest-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block text-xs font-extrabold uppercase tracking-widest text-forest-700 bg-forest-100 px-3.5 py-1.5 rounded-full mb-3">
+          DOT Travel Guide & Estimator
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-forest-950 tracking-tight mb-3">
+          Plan Your <span class="text-forest-700">Columbio Adventure</span>
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Check transit routes from major Mindanao hubs, explore sample itineraries, and estimate your group's eco-tour budget.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Left 7 Cols: Getting There + Sample Itineraries -->
+        <div class="lg:col-span-7 space-y-6">
+          <!-- Getting There Card -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-soft border border-forest-100">
+            <h3 class="font-display font-extrabold text-xl sm:text-2xl text-forest-950 mb-4 flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-xl bg-forest-700 text-white flex items-center justify-center text-sm">1</span>
+              <span>How to Get to Columbio</span>
+            </h3>
+
+            <!-- Origin Route Selector Tabs -->
+            <div class="flex flex-wrap gap-2 mb-5">
+              <button onclick="selectRoute('gensan')" id="route-btn-gensan" class="route-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-700 text-white transition cursor-pointer">
+                From General Santos City
+              </button>
+              <button onclick="selectRoute('koronadal')" id="route-btn-koronadal" class="route-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 transition cursor-pointer">
+                From Koronadal / Tacurong
+              </button>
+              <button onclick="selectRoute('davao')" id="route-btn-davao" class="route-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 transition cursor-pointer">
+                From Davao City
+              </button>
+            </div>
+
+            <div id="route-details" class="bg-forest-50/80 border border-forest-100 rounded-2xl p-5 space-y-3 text-sm">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <!-- Sample Itinerary Switcher -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-soft border border-forest-100">
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+              <h3 class="font-display font-extrabold text-xl sm:text-2xl text-forest-950 flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-xl bg-forest-700 text-white flex items-center justify-center text-sm">2</span>
+                <span>Curated Itineraries</span>
+              </h3>
+              <div class="inline-flex bg-forest-50 p-1 rounded-full border border-forest-100">
+                <button onclick="selectItinerary('day')" id="itin-btn-day" class="px-4 py-1.5 rounded-full text-xs font-bold bg-forest-700 text-white transition cursor-pointer">
+                  Day Tour
+                </button>
+                <button onclick="selectItinerary('overnight')" id="itin-btn-overnight" class="px-4 py-1.5 rounded-full text-xs font-bold text-forest-900 transition cursor-pointer">
+                  2D1N Camp & Falls
+                </button>
+              </div>
+            </div>
+
+            <div id="itinerary-content" class="space-y-3.5 text-sm">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 5 Cols: Interactive Eco-Tour Cost Estimator -->
+        <div class="lg:col-span-5">
+          <div class="bg-forest-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl sticky top-24 border border-forest-800">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-extrabold uppercase tracking-wider text-sungold-400">Interactive Calculator</span>
+              <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full text-emerald-200">PHP (₱) Estimates</span>
+            </div>
+            <h3 class="font-display font-extrabold text-2xl text-white mb-2">Eco-Trip Budget Estimator</h3>
+            <p class="text-xs text-emerald-100/80 mb-6">Estimate standard municipal environmental fees, accredited guide rates, and skylab/4x4 transfers.</p>
+
+            <div class="space-y-5">
+              <!-- Group Size Slider -->
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1.5">
+                  <span>Number of Travelers</span>
+                  <span id="pax-display" class="text-sungold-400 font-bold">4 Pax</span>
+                </div>
+                <input id="pax-slider" type="range" min="1" max="15" value="4" oninput="calculateBudget()" class="w-full accent-sungold-400 cursor-pointer" />
+                <div class="flex justify-between text-[11px] text-emerald-300/70 mt-1">
+                  <span>Solo (1)</span>
+                  <span>Group (5-10)</span>
+                  <span>Barkada (15)</span>
+                </div>
+              </div>
+
+              <!-- Package Selection -->
+              <div>
+                <label class="block text-sm font-semibold mb-2">Select Tour Package</label>
+                <select id="package-select" onchange="calculateBudget()" class="w-full bg-forest-800 border border-forest-700 text-white text-sm rounded-xl px-4 py-3 focus:outline-none focus:border-sungold-400">
+                  <option value="day_ridge">Day Tour: La Palmera Ridge + Cold Spring</option>
+                  <option value="overnight_ridge">2D1N: La Palmera Camping + Pangadilan Falls</option>
+                  <option value="grand_adventure">2D1N Grand Eco-Loop: Ridge + Falls + Fetam Klego Cave</option>
+                </select>
+              </div>
+
+              <!-- Transport Mode -->
+              <div>
+                <label class="block text-sm font-semibold mb-2">Local Highland Transfer</label>
+                <div class="grid grid-cols-2 gap-2.5">
+                  <label class="cursor-pointer">
+                    <input type="radio" name="transport" value="skylab" checked onchange="calculateBudget()" class="peer sr-only" />
+                    <div class="p-3 rounded-xl border border-forest-700 bg-forest-800/60 peer-checked:border-sungold-400 peer-checked:bg-forest-800 text-center transition">
+                      <span class="block text-xs font-bold text-white">Accredited Skylab</span>
+                      <span class="block text-[11px] text-emerald-200">2 pax / ride</span>
+                    </div>
+                  </label>
+                  <label class="cursor-pointer">
+                    <input type="radio" name="transport" value="4x4" onchange="calculateBudget()" class="peer sr-only" />
+                    <div class="p-3 rounded-xl border border-forest-700 bg-forest-800/60 peer-checked:border-sungold-400 peer-checked:bg-forest-800 text-center transition">
+                      <span class="block text-xs font-bold text-white">4x4 Pick-up</span>
+                      <span class="block text-[11px] text-emerald-200">Up to 8 pax</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Tent Rental Toggle -->
+              <label class="flex items-center justify-between p-3.5 rounded-xl bg-forest-800/70 border border-forest-700 cursor-pointer">
+                <div>
+                  <span class="block text-xs font-bold text-white">Include Tent Rental (2-pax tent)</span>
+                  <span class="block text-[11px] text-emerald-200">₱350 per tent / night</span>
+                </div>
+                <input id="tent-checkbox" type="checkbox" onchange="calculateBudget()" class="w-5 h-5 accent-sungold-400 rounded" />
+              </label>
+
+              <!-- Cost Breakdown Output -->
+              <div class="bg-forest-950/90 rounded-2xl p-5 border border-forest-800 space-y-2.5">
+                <div class="flex justify-between text-xs text-emerald-200">
+                  <span>Environmental & Entrance Fees</span>
+                  <span id="cost-fees">₱400</span>
+                </div>
+                <div class="flex justify-between text-xs text-emerald-200">
+                  <span>Accredited Local Guide(s)</span>
+                  <span id="cost-guide">₱500</span>
+                </div>
+                <div class="flex justify-between text-xs text-emerald-200">
+                  <span>Skylab / 4x4 Roundtrip Transfer</span>
+                  <span id="cost-transport">₱1,200</span>
+                </div>
+                <div id="cost-tent-row" class="hidden flex justify-between text-xs text-emerald-200">
+                  <span>Camping Tent Rental</span>
+                  <span id="cost-tent">₱0</span>
+                </div>
+                <div class="pt-3 border-t border-forest-800 flex items-baseline justify-between">
+                  <div>
+                    <span class="block text-xs text-emerald-300">Estimated Total Group</span>
+                    <span id="cost-total" class="font-display font-extrabold text-2xl text-sungold-400">₱2,100</span>
+                  </div>
+                  <div class="text-right">
+                    <span class="block text-xs text-emerald-300">Per Person</span>
+                    <span id="cost-per-pax" class="font-display font-bold text-lg text-white">₱525 / pax</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onclick="openBookingModal()" class="w-full bg-sungold-500 hover:bg-sungold-400 text-forest-950 font-display font-extrabold py-3.5 rounded-full shadow-lg transition cursor-pointer">
+                Lock In Registration Slot
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Advisories & Visitor Guidelines -->
+  <section id="advisories" class="py-16 bg-forest-50 border-t border-forest-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-widest text-forest-700">Official Municipal Tourism Advisory</span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-forest-950 mt-1">Sustainable Tourism & Safety Protocols</h2>
+        </div>
+        <span class="inline-flex items-center gap-2 text-xs font-bold bg-emerald-100 text-forest-900 px-4 py-2 rounded-full self-start">
+          <span class="w-2 h-2 rounded-full bg-forest-600"></span>
+          All Major Eco-Sites Open (Pre-Registration Advised)
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-forest-100 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-forest-950 mb-2">300-Visitor Daily Carrying Cap</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            To protect the fragile cogonal grass ecosystem of La Palmera Mountain Ridge, LGU Columbio enforces a strict <strong>300 visitors/day</strong> limit. Register at the Poblacion Tourism Desk or online before ascending.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-forest-100 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-forest-100 text-forest-700 flex items-center justify-center font-bold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-forest-950 mb-2">Accredited Guides & Skylab Riders</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            For your safety on steep mountain ridges, caves, and river trails, only hire <strong>LGU-accredited tour guides</strong> and registered Skylab/4x4 operators wearing official municipal ID badges.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-forest-100 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-forest-950 mb-2">Leave No Trace & Fire Safety</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Carry out all single-use plastics and trash. Open bonfires and cigarette smoking are strictly prohibited on dry grassland ridges to prevent grassfires.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Official DOT-Style Footer -->
+  <footer class="bg-forest-950 text-white pt-16 pb-10 border-t-4 border-sungold-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-forest-800">
+        <!-- Brand Column -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-11 h-11 rounded-2xl bg-forest-800 border border-forest-700 flex items-center justify-center">
+              <svg viewBox="0 0 64 64" class="w-8 h-8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="46" cy="18" r="7" fill="#FBBF24" />
+                <path d="M6 48C15 32 23 26 32 34C41 42 48 25 58 22V54H6V48Z" fill="#198754" />
+                <path d="M6 52C18 39 27 37 37 44C45 49 51 39 58 37V56H6V52Z" fill="#22A86B" />
+              </svg>
+            </div>
+            <div>
+              <span class="font-display font-extrabold text-xl tracking-tight text-white">LOVE <span class="text-sungold-400">COLUMBIO</span></span>
+              <p class="text-[11px] uppercase tracking-widest text-emerald-300">Sultan Kudarat • Region XII</p>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-emerald-100/80 leading-relaxed">
+            Official Tourism Promotion Portal of the Municipal Tourism Office of Columbio, Province of Sultan Kudarat, SOCCSKSARGEN, Philippines.
+          </p>
+          <div class="pt-1">
+            <span class="inline-block text-xs font-bold text-sungold-400 bg-forest-900 border border-forest-800 px-3 py-1.5 rounded-lg">
+              #LoveThePhilippines • #LoveColumbio • #ColumViewTiful
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="font-display font-bold text-sm uppercase tracking-wider text-sungold-400">Explore</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-emerald-100/80">
+            <li><a href="#destinations" class="hover:text-white transition">La Palmera Ridge</a></li>
+            <li><a href="#destinations" class="hover:text-white transition">Pangadilan Falls</a></li>
+            <li><a href="#destinations" class="hover:text-white transition">Fetam Klego River</a></li>
+            <li><a href="#destinations" class="hover:text-white transition">Seven Terraces</a></li>
+            <li><a href="#heritage" class="hover:text-white transition">Blaan Heritage</a></li>
+          </ul>
+        </div>
+
+        <!-- Tourism Desk & Emergency Hotlines -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-display font-bold text-sm uppercase tracking-wider text-sungold-400">Tourism & Assistance</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm text-emerald-100/85">
+            <li class="flex items-start gap-2">
+              <span class="text-sungold-400 font-bold">📍</span>
+              <span>Municipal Tourism Office, Poblacion, Columbio, 9801 Sultan Kudarat</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sungold-400 font-bold">📞</span>
+              <span>Tourism Helpdesk: +63 (064) 200-4812 / 0917-555-0192</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sungold-400 font-bold">🚑</span>
+              <span>MDRRMO Emergency: 0998-555-0144</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Visitor Inquiry / Newsletter Form -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="font-display font-bold text-sm uppercase tracking-wider text-sungold-400">Travel Updates & Inquiries</h4>
+          <p class="text-xs text-emerald-100/80">Receive seasonal weather updates, festival schedules, and ridge slot alerts.</p>
+          <form id="newsletter-form" onsubmit="handleNewsletter(event)" class="space-y-2.5">
+            <input
+              type="email"
+              required
+              placeholder="Enter your email address"
+              class="w-full px-4 py-2.5 rounded-xl bg-forest-900 border border-forest-700 text-sm text-white placeholder-emerald-300/50 focus:outline-none focus:border-sungold-400"
+            />
+            <button type="submit" class="w-full bg-forest-600 hover:bg-forest-500 text-white font-display font-bold text-xs sm:text-sm py-2.5 rounded-xl transition cursor-pointer">
+              Subscribe to Updates
+            </button>
+          </form>
+          <p id="newsletter-msg" class="hidden text-xs text-sungold-400 font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-300/70">
+        <p>© 2026 Municipal Government of Columbio — Municipal Tourism Office. All Rights Reserved.</p>
+        <p>Aligned with Department of Tourism (DOT) Region XII Sustainable Eco-Tourism Standards.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Destination Detail Modal -->
+  <div id="destination-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-forest-950/80 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-forest-100 relative animate-fadeIn">
+      <button onclick="closeDestinationModal()" aria-label="Close modal" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-forest-950/75 text-white hover:bg-forest-900 flex items-center justify-center transition cursor-pointer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="relative h-64 sm:h-72 bg-forest-900">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-forest-950/85 via-transparent to-transparent"></div>
+        <div class="absolute bottom-4 left-6 right-6">
+          <span id="modal-category" class="inline-block bg-sungold-500 text-forest-950 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-2"></span>
+          <h3 id="modal-title" class="font-display font-extrabold text-2xl sm:text-3xl text-white"></h3>
+          <p id="modal-barangay" class="text-xs sm:text-sm text-emerald-200 font-medium"></p>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-8 space-y-6">
+        <p id="modal-description" class="text-slate-700 text-sm sm:text-base leading-relaxed"></p>
+
+        <!-- Quick Facts Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 bg-forest-50 p-4 rounded-2xl border border-forest-100 text-xs sm:text-sm">
+          <div>
+            <span class="block text-slate-500 text-xs">From Poblacion</span>
+            <strong id="modal-distance" class="text-forest-950 font-bold"></strong>
+          </div>
+          <div>
+            <span class="block text-slate-500 text-xs">Trail Difficulty</span>
+            <strong id="modal-difficulty" class="text-forest-950 font-bold"></strong>
+          </div>
+          <div>
+            <span class="block text-slate-500 text-xs">Best Time to Visit</span>
+            <strong id="modal-besttime" class="text-forest-950 font-bold"></strong>
+          </div>
+        </div>
+
+        <!-- Transport & Guide Advisory -->
+        <div class="space-y-2">
+          <h4 class="font-display font-bold text-forest-950 text-sm uppercase tracking-wider">Access, Skylab & Guide Protocol</h4>
+          <p id="modal-tips" class="text-xs sm:text-sm text-slate-600 leading-relaxed bg-amber-50/70 border border-amber-200/70 p-4 rounded-2xl"></p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-end gap-3 pt-2">
+          <button onclick="closeDestinationModal()" class="px-5 py-2.5 rounded-full text-sm font-semibold text-slate-600 hover:bg-slate-100 transition cursor-pointer">
+            Close
+          </button>
+          <button id="modal-book-btn" class="bg-forest-700 hover:bg-forest-800 text-white font-display font-bold text-sm px-6 py-2.5 rounded-full shadow transition cursor-pointer">
+            Register Visit to This Site
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visitor Pre-Registration / Booking Modal -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-forest-950/80 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-lg w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-forest-100 p-6 sm:p-8 relative">
+      <button onclick="closeBookingModal()" aria-label="Close registration modal" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center justify-center transition cursor-pointer">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div id="booking-form-container">
+        <span class="inline-block text-xs font-extrabold uppercase tracking-wider text-forest-700 bg-forest-100 px-3 py-1 rounded-full mb-2">
+          Municipal Tourism Desk
+        </span>
+        <h3 class="font-display font-extrabold text-2xl text-forest-950 mb-1">Eco-Visit Pre-Registration</h3>
+        <p class="text-xs text-slate-600 mb-5">Reserve your slot under Columbio's 300-visitor/day sustainable carrying capacity.</p>
+
+        <form onsubmit="submitBooking(event)" class="space-y-4 text-sm">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Lead Visitor Full Name</label>
+            <input type="text" id="reg-name" required placeholder="e.g., Juan Dela Cruz" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-forest-600" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-semibold text-slate-700 mb-1">Target Visit Date</label>
+              <input type="date" id="reg-date" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-forest-600" />
+            </div>
+            <div>
+              <label class="block font-semibold text-slate-700 mb-1">Group Size (Pax)</label>
+              <input type="number" id="reg-pax" min="1" max="30" value="4" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-forest-600" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Primary Destination</label>
+            <select id="reg-destination" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-forest-600 bg-white">
+              <option value="La Palmera Mountain Ridge">La Palmera Mountain Ridge</option>
+              <option value="Pangadilan Falls & Rock Formation">Pangadilan Falls & Rock Formation</option>
+              <option value="Fetam Klego Underground River">Fetam Klego Underground River</option>
+              <option value="Seven Terraces / Seven Falls">Seven Terraces / Seven Falls</option>
+              <option value="Su'bon Cave & Datablao Cave">Su'bon Cave & Datablao Cave</option>
+              <option value="Divine Mercy Shrine & Fekung Bula Eco-Park">Divine Mercy Shrine & Fekung Bula Eco-Park</option>
+              <option value="Cultural & Heritage Immersion">Blaan Cultural & Heritage Immersion</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Mobile Number / Email</label>
+            <input type="text" id="reg-contact" required placeholder="09XX-XXX-XXXX or email" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-forest-600" />
+          </div>
+
+          <label class="flex items-start gap-2.5 text-xs text-slate-600 bg-forest-50 p-3 rounded-xl border border-forest-100 cursor-pointer">
+            <input type="checkbox" required class="mt-0.5 accent-forest-700" />
+            <span>I agree to abide by Columbio's Leave No Trace policy, hire LGU-accredited local guides, and respect Blaan ancestral heritage.</span>
+          </label>
+
+          <button type="submit" class="w-full bg-forest-700 hover:bg-forest-800 text-white font-display font-extrabold py-3.5 rounded-full shadow-lg transition cursor-pointer">
+            Generate Tourism Reference Pass
+          </button>
+        </form>
+      </div>
+
+      <!-- Confirmation Slip (Shown on submit) -->
+      <div id="booking-confirmation" class="hidden text-center space-y-4 py-4">
+        <div class="w-16 h-16 rounded-full bg-emerald-100 text-forest-700 flex items-center justify-center mx-auto">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h3 class="font-display font-extrabold text-2xl text-forest-950">Eco-Visit Registered!</h3>
+        <p class="text-xs sm:text-sm text-slate-600">Present this reference code at the Columbio Municipal Tourism Assistance Desk upon arrival.</p>
+        <div class="bg-forest-50 border-2 border-dashed border-forest-300 rounded-2xl p-4 space-y-1">
+          <span class="text-[11px] uppercase tracking-widest text-slate-500 font-bold">Reference Pass ID</span>
+          <p id="conf-ref" class="font-display font-extrabold text-2xl text-forest-800 tracking-wider">COL-2026-8492</p>
+          <p id="conf-summary" class="text-xs text-slate-700 font-medium pt-1"></p>
+        </div>
+        <button onclick="closeBookingModal()" class="w-full bg-forest-800 text-white font-display font-bold py-3 rounded-full cursor-pointer">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Logic & Data -->
+  <script>
+    // 1. Curated Destinations Dataset
+    const destinations = [
+      {
+        id: 'la-palmera',
+        title: 'La Palmera Mountain Ridge',
+        barangay: 'Barangay Sucob, Columbio',
+        category: 'mountains',
+        categoryLabel: 'Mountains & Ridges',
+        tagline: 'The 500-hectare rolling cogonal hills dubbed the "Ecotourism Site of Sultan Kudarat".',
+        description: 'Stretching across over 500 hectares of uninterrupted undulating hills in Barangay Sucob, La Palmera Mountain Ridge transforms dramatically with the seasons—from lush emerald velvet during rainy months to warm golden savannahs in summer. Visitors camp overnight to witness a breathtaking sea of clouds and panoramic sunrises over the Sultan Kudarat and Davao del Sur mountain ranges.',
+        distance: '14 km from Poblacion (~35-45 mins)',
+        difficulty: 'Easy to Moderate',
+        bestTime: '4:30 AM (Sunrise) / Overnight',
+        tips: 'Accessible via LGU-accredited Skylab motorcycles or 4x4 vehicles from Poblacion/Brgy. Sucob jump-off. Strict 300 visitors/day cap applies; pre-register and hire an accredited local guide.',
+        image: 'La Palmera.jpg?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/0A3622/FBBF24?text=The+Grand+La+Palmera+Ridge'
+      },
+      {
+        id: 'pangadilan-falls',
+        title: 'Pangadilan Falls & Rock Formation',
+        barangay: 'Barangay Polomolok / Highland Zone',
+        category: 'waterfalls',
+        categoryLabel: 'Waterfalls & Springs',
+        tagline: 'Sculpted limestone canyons framing cascading turquoise waters.',
+        description: 'Pangadilan Falls captivates hikers with its dramatic, naturally carved limestone walls and cool emerald plunge pools. Surrounded by thick secondary rainforest, it offers a refreshing sanctuary after traversing Columbio’s highland trails.',
+        distance: '16 km from Poblacion (~45 mins + trek)',
+        difficulty: 'Moderate (River & Forest Trail)',
+        bestTime: '8:00 AM – 2:00 PM (Sunny Days)',
+        tips: 'Wear sturdy aqua shoes or trekking sandals with good grip for wet limestone rocks. Always travel with an accredited local guide and check weather advisories during heavy monsoon rains.',
+        image: 'Pangadilan Falls.jpg?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/157347/FFFFFF?text=Pangadilan+Falls'
+      },
+      {
+        id: 'fetam-klego',
+        title: 'Fetam Klego Underground River',
+        barangay: 'Barangay Sinapulan / Upland Sanctuary',
+        category: 'river',
+        categoryLabel: 'Caves & Rivers',
+        tagline: 'A mystical subterranean river winding beneath ancient limestone chambers.',
+        description: 'One of Sultan Kudarat’s premier spelunking and eco-trekking gems, Fetam Klego Underground River rewards adventurers with a scenic 30-to-60-minute jungle trek leading to a dramatic cavern mouth where crystal-clear spring water emerges from the mountain.',
+        distance: '19 km from Poblacion (~50 mins + 45-min trek)',
+        difficulty: 'Moderate to Challenging',
+        bestTime: '7:30 AM – 1:00 PM',
+        tips: 'Headlamps, helmets, and life vests are mandatory for subterranean exploration. Coordinate directly with the Barangay Tourism Council and accredited Blaan river guides.',
+        image: 'Fetam Klego.jpg?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/0F4D31/FBBF24?text=Fetam+Klego+Underground+River'
+      },
+      {
+        id: 'seven-terraces',
+        title: 'Seven Terraces (Seven Falls of Columbio)',
+        barangay: 'Barangay Sinapulan, Upland Forest Reserve',
+        category: 'waterfalls',
+        categoryLabel: 'Waterfalls & Springs',
+        tagline: 'Seven cascading tiers of pure mountain spring water hidden in emerald canopy.',
+        description: 'Featuring seven distinct waterfall levels connected by natural rock pools and lush fern-draped cliffs, Seven Terraces is a paradise for eco-trekkers and nature photographers seeking untouched Mindanao wilderness.',
+        distance: '17 km from Poblacion',
+        difficulty: 'Moderate (Multi-tier Ascent)',
+        bestTime: '8:00 AM – 3:00 PM',
+        tips: 'Combine your visit with a dip at Columbio Hot & Cold Spring or Sinapulan Cold Spring on your return to Poblacion.',
+        image: 'Seven Falls.jfif?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/198754/FFFFFF?text=Seven+Terraces+Waterfalls'
+      },
+      {
+        id: 'subon-datablao-caves',
+        title: "Panes Cave",
+        barangay: 'Barangay Lasak, Columbio',
+        category: 'caves',
+        categoryLabel: 'Caves & Rivers',
+        tagline: 'Cathedral-sized caverns adorned with glittering stalactites and mineral columns.',
+        description: 'Explore Columbio’s rich karst underworld inside Su’bon and Datablao Caves. Guided eco-tours reveal towering flowstones, ancient limestone formations, and thriving bat colonies vital to the local forest ecosystem.',
+        distance: '18 km from Poblacion',
+        difficulty: 'Moderate (Spelunking)',
+        bestTime: '8:00 AM – 2:00 PM',
+        tips: 'Do not touch active stalactites or disturb cave wildlife. Flash photography is restricted in sensitive chambers.',
+        image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/0A3622/FFFFFF?text=Subon+%26+Datablao+Caves'
+      },
+      {
+        id: 'divine-mercy-park',
+        title: "Divine Mercy Shrine & Fekung Bula Eco-Park",
+        barangay: 'Poblacion & Rolling Hills Corridor',
+        category: 'culture',
+        categoryLabel: 'Faith & Eco-Parks',
+        tagline: 'Serene hilltop pilgrimage at Aaleyah’s Garden and panoramic ecological park.',
+        description: 'Ideal for families and reflective travelers, the Divine Mercy Shrine at Aaleyah’s Garden and Fekung Bula Ecological Park offer landscaped gardens, cool highland breezes, and sweeping vistas of Columbio’s valley.',
+        distance: '4 – 8 km from Poblacion (~15 mins)',
+        difficulty: 'Easy (Family-Friendly)',
+        bestTime: '6:00 AM – 5:30 PM',
+        tips: 'Accessible by private vehicle, tricycle, or skylab. Observe solemnity in prayer zones and support local plant and souvenir stalls.',
+        image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+        fallback: 'https://placehold.co/800x600/157347/FBBF24?text=Divine+Mercy+%26+Eco+Park'
+      }
+    ];
+
+    // 2. Signature Experiences Dataset
+    const experiencesData = [
+      {
+        title: 'Skybound & Ridge Camping at La Palmera',
+        badge: 'Overnight Stargazing & Sunrise',
+        desc: 'Pitch a tent along designated eco-camping zones on the sweeping cogonal hills of Barangay Sucob. Enjoy cool mountain breezes, zero light pollution for Milky Way stargazing, and a golden sunrise breaking over a sea of clouds.',
+        time: '4:30 AM – 7:30 AM',
+        guide: 'Accredited Required',
+        impact: 'Direct Brgy. Sucob Coop',
+        image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1400&q=80'
+      },
+      {
+        title: 'Skylab & 4x4 Highland Rides',
+        badge: 'Iconic Mindanao Highland Transit',
+        desc: 'Experience the thrill of riding Columbio’s specially engineered "Skylab" motorcycles or rugged 4x4 pickups up winding mountain trails. Operated by trained local drivers, every ride directly sustains highland families.',
+        time: 'Year-Round (Morning Best)',
+        guide: 'DOT-Oriented Riders',
+        impact: '100% Local Driver Assoc.',
+        image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1400&q=80'
+      },
+      {
+        title: 'Subterranean & Waterfall Eco-Treks',
+        badge: 'Caving & Jungle Cascades',
+        desc: 'Trek beneath ancient forest canopies to discover the crystal underground passages of Fetam Klego and the seven cascading tiers of Seven Terraces, guided by indigenous B’laan forest stewards.',
+        time: '7:30 AM – 2:00 PM',
+        guide: 'Mandatory Safety Guide',
+        impact: 'Forest Conservation Fund',
+        image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80'
+      },
+      {
+        title: 'Hot & Cold Spring Rejuvenation',
+        badge: 'Natural Hydro-Wellness',
+        desc: 'After a rewarding morning hike across Columbio’s ridges, soothe tired muscles in the side-by-side thermal and crystal-cool spring waters of Columbio Hot & Cold Spring and Sinapulan Cold Spring.',
+        time: '8:00 AM – 5:00 PM',
+        guide: 'Open Access / Family',
+        impact: 'Community Eco-Maintenance',
+        image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80'
+      }
+    ];
+
+    // 3. Transit Routes Dataset
+    const transitRoutes = {
+      gensan: {
+        title: 'From General Santos City (Approx. 2.5 – 3 Hours)',
+        steps: [
+          'Board an air-conditioned van or Husky/Yellow Bus bound for Koronadal City (Marbel) or Tacurong City via the National Highway (~1.5 hrs).',
+          'From Koronadal City Integrated Terminal or Lutayan junction, take a van or bus heading directly to Columbio Poblacion (~45 mins to 1 hr).',
+          'Register at the Columbio Municipal Tourism Assistance Desk in Poblacion to connect with your accredited guide and Skylab/4x4 ride.'
+        ]
+      },
+      koronadal: {
+        title: 'From Koronadal City / Tacurong City (Approx. 45 Mins – 1.5 Hours)',
+        steps: [
+          'From Koronadal City (Marbel) or Tacurong City public terminal, board a public utility van or jeepney bound for Columbio, Sultan Kudarat.',
+          'Enjoy a scenic drive past lush agricultural plains and foothills straight into Columbio Poblacion.',
+          'Proceed to the Municipal Tourism Desk for orientation and barangay jump-off dispatch.'
+        ]
+      },
+      davao: {
+        title: 'From Davao City (Approx. 3.5 – 4 Hours)',
+        steps: [
+          'Take a bus or van from Davao City Overland Transport Terminal (Ecoland) heading south toward Digos City and Magsaysay / Tulunan boundary.',
+          'Transfer at Tulunan or Tacurong junction for a van/bus bound for Columbio, Sultan Kudarat.',
+          'Check in at the Columbio Tourism Desk before ascending to Barangay Sucob or upland eco-parks.'
+        ]
+      }
+    };
+
+    // 4. Itineraries Dataset
+    const itineraries = {
+      day: [
+        { time: '04:30 AM', activity: 'Arrival & Registration at Poblacion Tourism Desk; Skylab/4x4 ascent to Brgy. Sucob.' },
+        { time: '05:30 AM', activity: 'Sunrise & Sea of Clouds viewing at La Palmera Mountain Ridge.' },
+        { time: '08:30 AM', activity: 'Highland breakfast & panoramic photo walk across the 500-hectare rolling hills.' },
+        { time: '11:00 AM', activity: 'Visit Divine Mercy Shrine at Aaleyah’s Garden & local B’laan woven crafts.' },
+        { time: '01:30 PM', activity: 'Afternoon dip at Columbio Hot & Cold Spring before departure.' }
+      ],
+      overnight: [
+        { time: 'Day 1 • 08:00 AM', activity: 'Registration at Poblacion; depart for Pangadilan Falls or Fetam Klego Underground River trek.' },
+        { time: 'Day 1 • 02:30 PM', activity: 'Ascend via Skylab/4x4 to La Palmera Ridge; set up camp & sunset ridge walk.' },
+        { time: 'Day 1 • 07:30 PM', activity: 'Highland dinner, acoustic fellowship, and Milky Way stargazing.' },
+        { time: 'Day 2 • 05:15 AM', activity: 'Golden sunrise over the sea of clouds & morning coffee on the ridge.' },
+        { time: 'Day 2 • 10:00 AM', activity: 'Descend to Poblacion, cool off at Sinapulan Cold Spring, and buy local pasalubong.' }
+      ]
+    };
+
+    let currentCategory = 'all';
+
+    // Render Destination Cards
+    function renderDestinations() {
+      const grid = document.getElementById('destinations-grid');
+      const searchVal = document.getElementById('destination-search').value.toLowerCase().trim();
+
+      const filtered = destinations.filter(item => {
+        const matchesCat = currentCategory === 'all' || item.category === currentCategory;
+        const matchesSearch = !searchVal ||
+          item.title.toLowerCase().includes(searchVal) ||
+          item.barangay.toLowerCase().includes(searchVal) ||
+          item.tagline.toLowerCase().includes(searchVal);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center py-12 bg-white rounded-3xl border border-forest-100">
+            <p class="font-display font-bold text-lg text-forest-900">No matching destinations found.</p>
+            <p class="text-sm text-slate-500 mt-1">Try resetting your filter or searching another keyword.</p>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(dest => `
+        <article class="group bg-white rounded-3xl overflow-hidden shadow-card border border-forest-100/80 flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300">
+          <div>
+            <div class="relative h-60 overflow-hidden bg-forest-900">
+              <img
+                src="${dest.image}"
+                onerror="this.src='${dest.fallback}'"
+                alt="${dest.title}"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-forest-950/75 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-forest-900/90 backdrop-blur-md text-sungold-400 text-[11px] font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full border border-white/15">
+                ${dest.categoryLabel}
+              </span>
+              <span class="absolute bottom-3 left-4 text-xs font-semibold text-white/95 flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-sungold-400" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                </svg>
+                ${dest.barangay}
+              </span>
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-display font-extrabold text-xl text-forest-950 group-hover:text-forest-700 transition mb-2">
+                ${dest.title}
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                ${dest.tagline}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-forest-700 bg-forest-50 px-3 py-1 rounded-full">
+              ${dest.difficulty}
+            </span>
+            <button
+              onclick="openDestinationModal('${dest.id}')"
+              class="inline-flex items-center gap-1.5 font-display font-bold text-sm text-forest-800 hover:text-forest-600 transition cursor-pointer"
+            >
+              <span>Explore Site</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Filter Pill Sync (Hero + Section Pills)
+    function setCategoryFilter(filter) {
+      currentCategory = filter;
+
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        if (btn.dataset.filter === filter) {
+          btn.className = 'filter-pill active px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-700 text-white shadow-sm whitespace-nowrap transition cursor-pointer';
+        } else {
+          btn.className = 'filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 whitespace-nowrap transition cursor-pointer';
+        }
+      });
+
+      document.querySelectorAll('.sec-filter-pill').forEach(btn => {
+        if (btn.dataset.filter === filter) {
+          btn.className = 'sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-800 text-white transition cursor-pointer';
+        } else {
+          btn.className = 'sec-filter-pill px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-forest-600 transition cursor-pointer';
+        }
+      });
+
+      renderDestinations();
+    }
+
+    document.querySelectorAll('.filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => {
+        setCategoryFilter(btn.dataset.filter);
+        document.getElementById('destinations').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.querySelectorAll('.sec-filter-pill').forEach(btn => {
+      btn.addEventListener('click', () => setCategoryFilter(btn.dataset.filter));
+    });
+
+    document.getElementById('destination-search').addEventListener('input', renderDestinations);
+
+    // Hero Season View Switcher (Emerald Season vs Golden Season)
+    function setSeasonMode(mode) {
+      const heroImg = document.getElementById('hero-image');
+      const heroOverlay = document.getElementById('hero-overlay');
+      const btnGreen = document.getElementById('btn-season-green');
+      const btnGold = document.getElementById('btn-season-gold');
+      const caption = document.getElementById('season-caption');
+
+      if (mode === 'green') {
+        heroImg.src = 'La Palmera.jpg?auto=format&fit=crop&w=2000&q=80';
+        heroOverlay.className = 'absolute inset-0 bg-gradient-to-r from-forest-950/90 via-forest-900/65 to-forest-950/40';
+        btnGreen.className = 'flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-600 text-white shadow transition cursor-pointer';
+        btnGold.className = 'flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-white/80 hover:text-white transition cursor-pointer';
+        caption.innerHTML = '🌿 Currently viewing: <strong>Lush Emerald Season (June – January)</strong> — Vibrant green cogonal hills & cool sea of clouds.';
+      } else {
+        heroImg.src = 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=80';
+        heroOverlay.className = 'absolute inset-0 bg-gradient-to-r from-forest-950/90 via-amber-950/55 to-forest-950/45';
+        btnGold.className = 'flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-sungold-500 text-forest-950 shadow transition cursor-pointer';
+        btnGreen.className = 'flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-bold text-white/80 hover:text-white transition cursor-pointer';
+        caption.innerHTML = '☀️ Currently viewing: <strong>Golden Summer Season (February – May)</strong> — Sun-drenched golden savannah ridges & clear starry nights.';
+      }
+    }
+
+    // Experience Tabs Switcher
+    function selectExperience(index) {
+      const exp = experiencesData[index];
+      document.getElementById('exp-title').textContent = exp.title;
+      document.getElementById('exp-badge').textContent = exp.badge;
+      document.getElementById('exp-desc').textContent = exp.desc;
+      document.getElementById('exp-time').textContent = exp.time;
+      document.getElementById('exp-guide').textContent = exp.guide;
+      document.getElementById('exp-impact').textContent = exp.impact;
+      document.getElementById('exp-image').src = exp.image;
+
+      document.querySelectorAll('.exp-tab').forEach((tab, idx) => {
+        if (idx === index) {
+          tab.className = 'exp-tab active w-full text-left p-5 rounded-2xl bg-forest-800 border-2 border-sungold-400 transition cursor-pointer';
+        } else {
+          tab.className = 'exp-tab w-full text-left p-5 rounded-2xl bg-forest-900/80 border border-forest-800 hover:border-forest-600 transition cursor-pointer';
+        }
+      });
+    }
+
+    // Transit Route Switcher
+    function selectRoute(key) {
+      const route = transitRoutes[key];
+      const container = document.getElementById('route-details');
+
+      document.querySelectorAll('.route-btn').forEach(btn => {
+        btn.className = 'route-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-forest-50 text-forest-900 hover:bg-forest-100 transition cursor-pointer';
+      });
+      document.getElementById(`route-btn-${key}`).className = 'route-btn px-4 py-2 rounded-full text-xs sm:text-sm font-bold bg-forest-700 text-white transition cursor-pointer';
+
+      container.innerHTML = `
+        <p class="font-display font-bold text-forest-950 text-base">${route.title}</p>
+        <ol class="list-decimal list-inside space-y-2 text-slate-700">
+          ${route.steps.map(step => `<li>${step}</li>`).join('')}
+        </ol>
+      `;
+    }
+
+    // Itinerary Switcher
+    function selectItinerary(type) {
+      const list = itineraries[type];
+      const container = document.getElementById('itinerary-content');
+
+      document.getElementById('itin-btn-day').className = type === 'day'
+        ? 'px-4 py-1.5 rounded-full text-xs font-bold bg-forest-700 text-white transition cursor-pointer'
+        : 'px-4 py-1.5 rounded-full text-xs font-bold text-forest-900 transition cursor-pointer';
+
+      document.getElementById('itin-btn-overnight').className = type === 'overnight'
+        ? 'px-4 py-1.5 rounded-full text-xs font-bold bg-forest-700 text-white transition cursor-pointer'
+        : 'px-4 py-1.5 rounded-full text-xs font-bold text-forest-900 transition cursor-pointer';
+
+      container.innerHTML = list.map(item => `
+        <div class="flex items-start gap-3.5 p-3 rounded-2xl bg-forest-50/60 border border-forest-100">
+          <span class="px-2.5 py-1 rounded-lg bg-forest-800 text-sungold-400 font-display font-bold text-xs whitespace-nowrap shrink-0">
+            ${item.time}
+          </span>
+          <p class="text-slate-700 leading-snug">${item.activity}</p>
+        </div>
+      `).join('');
+    }
+
+    // Interactive Eco-Trip Budget Estimator
+    function calculateBudget() {
+      const pax = parseInt(document.getElementById('pax-slider').value, 10);
+      const pkg = document.getElementById('package-select').value;
+      const transport = document.querySelector('input[name="transport"]:checked').value;
+      const includeTent = document.getElementById('tent-checkbox').checked;
+
+      document.getElementById('pax-display').textContent = `${pax} ${pax === 1 ? 'Pax' : 'Pax'}`;
+
+      // Standard municipal/coop fee estimates (PHP)
+      const feePerPax = pkg === 'day_ridge' ? 100 : (pkg === 'overnight_ridge' ? 150 : 220);
+      const totalFees = pax * feePerPax;
+
+      // 1 accredited guide per 5 pax
+      const guideCount = Math.ceil(pax / 5);
+      const guideRate = pkg === 'day_ridge' ? 500 : (pkg === 'overnight_ridge' ? 1000 : 1300);
+      const totalGuide = guideCount * guideRate;
+
+      // Skylab (2 pax per bike) vs 4x4 (up to 8 pax per vehicle)
+      let totalTransport = 0;
+      if (transport === 'skylab') {
+        const bikes = Math.ceil(pax / 2);
+        const ratePerBike = pkg === 'day_ridge' ? 600 : (pkg === 'overnight_ridge' ? 800 : 1100);
+        totalTransport = bikes * ratePerBike;
+      } else {
+        const trucks = Math.ceil(pax / 8);
+        const ratePerTruck = pkg === 'day_ridge' ? 2200 : (pkg === 'overnight_ridge' ? 2800 : 3500);
+        totalTransport = trucks * ratePerTruck;
+      }
+
+      const tentRow = document.getElementById('cost-tent-row');
+      let totalTent = 0;
+      if (includeTent) {
+        const tentsNeeded = Math.ceil(pax / 2);
+        totalTent = tentsNeeded * 350;
+        tentRow.classList.remove('hidden');
+        document.getElementById('cost-tent').textContent = `₱${totalTent.toLocaleString()}`;
+      } else {
+        tentRow.classList.add('hidden');
+      }
+
+      const grandTotal = totalFees + totalGuide + totalTransport + totalTent;
+      const perPax = Math.round(grandTotal / pax);
+
+      document.getElementById('cost-fees').textContent = `₱${totalFees.toLocaleString()}`;
+      document.getElementById('cost-guide').textContent = `₱${totalGuide.toLocaleString()}`;
+      document.getElementById('cost-transport').textContent = `₱${totalTransport.toLocaleString()}`;
+      document.getElementById('cost-total').textContent = `₱${grandTotal.toLocaleString()}`;
+      document.getElementById('cost-per-pax').textContent = `₱${perPax.toLocaleString()} / pax`;
+    }
+
+    // Destination Modal Controls
+    function openDestinationModal(id) {
+      const dest = destinations.find(d => d.id === id);
+      if (!dest) return;
+
+      document.getElementById('modal-img').src = dest.image;
+      document.getElementById('modal-img').onerror = function() { this.src = dest.fallback; };
+      document.getElementById('modal-category').textContent = dest.categoryLabel;
+      document.getElementById('modal-title').textContent = dest.title;
+      document.getElementById('modal-barangay').textContent = dest.barangay;
+      document.getElementById('modal-description').textContent = dest.description;
+      document.getElementById('modal-distance').textContent = dest.distance;
+      document.getElementById('modal-difficulty').textContent = dest.difficulty;
+      document.getElementById('modal-besttime').textContent = dest.bestTime;
+      document.getElementById('modal-tips').textContent = dest.tips;
+
+      document.getElementById('modal-book-btn').onclick = () => {
+        closeDestinationModal();
+        openBookingModal(dest.title);
+      };
+
+      const modal = document.getElementById('destination-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDestinationModal() {
+      const modal = document.getElementById('destination-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // Booking / Registration Modal Controls
+    function openBookingModal(preselectedDest) {
+      document.getElementById('booking-form-container').classList.remove('hidden');
+      document.getElementById('booking-confirmation').classList.add('hidden');
+
+      if (preselectedDest) {
+        const select = document.getElementById('reg-destination');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value.includes(preselectedDest) || preselectedDest.includes(select.options[i].value)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+
+      // Default date to tomorrow
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      document.getElementById('reg-date').valueAsDate = tomorrow;
+
+      const modal = document.getElementById('booking-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function submitBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById('reg-name').value;
+      const date = document.getElementById('reg-date').value;
+      const pax = document.getElementById('reg-pax').value;
+      const dest = document.getElementById('reg-destination').value;
+
+      const randomCode = Math.floor(1000 + Math.random() * 9000);
+      document.getElementById('conf-ref').textContent = `COL-2026-${randomCode}`;
+      document.getElementById('conf-summary').textContent = `${name} (${pax} Pax) • ${dest} on ${date}`;
+
+      document.getElementById('booking-form-container').classList.add('hidden');
+      document.getElementById('booking-confirmation').classList.remove('hidden');
+    }
+
+    // Newsletter Submission
+    function handleNewsletter(e) {
+      e.preventDefault();
+      const msg = document.getElementById('newsletter-msg');
+      msg.textContent = '✓ Salamat! You are now subscribed to Love Columbio travel advisories.';
+      msg.classList.remove('hidden');
+      e.target.reset();
+    }
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Close Modals on Backdrop Click or Escape Key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeDestinationModal();
+        closeBookingModal();
+      }
+    });
+
+    document.getElementById('destination-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'destination-modal') closeDestinationModal();
+    });
+
+    document.getElementById('booking-modal').addEventListener('click', (e) => {
+      if (e.target.id === 'booking-modal') closeBookingModal();
+    });
+
+    // Initialize Page Content
+    window.addEventListener('DOMContentLoaded', () => {
+      renderDestinations();
+      selectRoute('gensan');
+      selectItinerary('day');
+      calculateBudget();
+    });
+  </script>
+</body>
+</html>
